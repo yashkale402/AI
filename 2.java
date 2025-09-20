@@ -363,4 +363,26 @@ SimpleDateFormat("HH:mm:ss");
     <p>Current time: <%= time %></p> 
 </body> 
 </html> 
+     <web-app>
+    <servlet>
+        <servlet-name>H</servlet-name>
+        <servlet-class>DateTimeServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>H</servlet-name>
+        <url-pattern>/date</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>abc</servlet-name>
+        <servlet-class>HelloWorld</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>abc</servlet-name>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+</web-app>
+     
  
